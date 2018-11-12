@@ -16,6 +16,55 @@ FSJS project 1 - A Random Quote Generator
       quote object.
 ***/
 
+const quotes = [
+  {
+    quote1: [
+      {
+        quote: "Be the change you wish to see in the world.",
+        source: "Gandhi",
+        citation: "Vol. 13, Ch. 153, page 241",
+        year: "1913"
+      }
+    ],
+
+    quote2: [
+      {
+        quote: "I don't always test my code, but when I do I do it in production",
+        source: "Mr. Dos Equis",
+        citation: "The Internet",
+        year: "2015"
+      }
+    ],
+
+    quote3: [
+      {
+        quote: "Chuck Norris counted to infinity... twice.",
+        source: "Unknown",
+        citation: "The Internet",
+        year: "2018"
+      }
+    ],
+
+    quote4: [
+      {
+        quote: "Hate does not drive out hate, only love can do that",
+        source: "Martin Luther King Jr.",
+        citation: "Sermon: Loving Your Enemies",
+        year: "1958"
+      }
+    ],
+
+    quote5: [
+      {
+        quote: "It's kinda fun to do the impossible.",
+        source: "Walt Disney",
+        citation: "Unknown",
+        year: "Mid 1900's"
+      }
+    ]
+  }
+]
+
 
 
 
