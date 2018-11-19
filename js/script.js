@@ -7,21 +7,21 @@ const quotes = [
     quote: "Be the change you wish to see in the world.",
     source: "Gandhi",
     citation: "Vol. 13, Ch. 153, page 241",
-    // year: "1913"
+    year: "1913"
   },
     
   {
     quote: "I don't always test my code, but when I do I do it in production",
     source: "Mr. Dos Equis",
     citation: "The Internet",
-    // year: "2015"
+    year: "2018"
   },
     
   {
     quote: "Chuck Norris counted to infinity... twice.",
     source: "Unknown",
-    citation: "The Internet",
-    // year: "2018"
+    citation: "The Internet"
+    // year: null
   },
 
   {
@@ -34,7 +34,7 @@ const quotes = [
   {
     quote: "It's kinda fun to do the impossible.",
     source: "Walt Disney",
-    citation: "Unknown",
+    // citation: null,
     year: "Mid 1900's"
   }
 ];
