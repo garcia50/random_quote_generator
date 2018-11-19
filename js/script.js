@@ -63,10 +63,8 @@ const quotes = [
 
 
 /***
-  When the "Show another quote" button is clicked, the event listener 
-  below will be triggered, and it will call, or "invoke", the `printQuote` 
-  function. So do not make any changes to the line of code below this 
-  comment.
+  Add an eventListener to the Show another quote" button that will call the
+  `printQuote function.
 ***/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
