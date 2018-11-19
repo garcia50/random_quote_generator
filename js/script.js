@@ -41,10 +41,10 @@ const quotes = [
 // > quotes[0].quote1[0].quote
 
 /***
-  Create the `getRandomQuote` function to:
-   - generate a random number 
-   - use the random number to `return` a random quote object from the 
-     `quotes` array.
+  Create a random number generator, making sure it only generates a random 
+  number up to quote length.
+  Then create a `getRandomQuote` function to iterate over the quotes and 
+  select quote by index using the random number.
 ***/
 
 
