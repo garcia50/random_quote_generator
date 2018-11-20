@@ -11,16 +11,17 @@ const quotes = [
   },
     
   {
-    quote: "I don't always test my code, but when I do I do it in production.",
+    quote: "I don't always test my code, but when I do I do it in production",
     source: "Mr. Dos Equis",
     citation: "The Internet",
     year: "2018"
   },
     
   {
-    quote: "Chuck Norris counted to infinity... twice",
+    quote: "Chuck Norris counted to infinity... twice.",
     source: "Unknown",
     citation: "The Internet"
+    // year: null
   },
 
   {
@@ -33,66 +34,40 @@ const quotes = [
   {
     quote: "It's kinda fun to do the impossible.",
     source: "Walt Disney",
+    // citation: null,
     year: "Mid 1900's"
-  },
-
-  {
-    quote: "It's Over Anakin! I have the high ground!",
-    source: "Obi-Wan"
   }
 ];
+// > quotes[0].quote1[0].quote
 
 /***
   Create a random number generator, making sure it only generates a random 
   number up to quote length.
+  Then create a `getRandomQuote` function to iterate over the quotes and 
+  select quote by index using the random number.
 ***/
 
-const getRandomNum = () => Math.floor(Math.random() * quotes.length);
-//Then create a `getRandomQuote` function to iterate over the quotes and 
-  select quote by index using the random number.
-const getRandomQuote = (array) => {
-  for (var i = 0; i < array.length; i++) {
-    return array[getRandomNum()]  
-  }
-};
- 
+
+
+
 /***
   Create a `printQuote` function that calls the `getRandomQuote` function to
-  obtain the random quote.
+  obtain the random quote. Then create a `htmlBlock` variable to contain
+  HTML content that will eventually replace the defaulted quote each time the 
+  program is ran. Using conditionals statements, make sure the optional 
+  properties exist before they are added to the HTML string.
+  Finally, set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-const printQuote = () => {
-  const quoteInfo = getRandomQuote(quotes)
-  
-//Then create a `htmlBlock` variable to contain
-  HTML content that will eventually replace the defaulted quote each time the 
-  program is ran. 
-  let htmlBlock = `
-    <p class="quote">${quoteInfo.quote}</p>
-    <p class="source">${quoteInfo.source}`;
 
-//Using conditionals statements, make sure the optional 
-  properties exist before they are added to the HTML string.
-  if(quoteInfo.citation){
-    htmlBlock += `<span class="citation">${quoteInfo.citation}</span>`;
-  }
-  
-  if(quoteInfo.year){
-    htmlBlock += `<span class="year">${quoteInfo.year}</span></p>`;
-  }
 
-  htmlBlock += "</p>";
-
-//Finally, set the `innerHTML` of the `quote-box` div to the HTML string. 
-  const quotebox = document.getElementById("quote-box");
-  quotebox.innerHTML = htmlBlock
-};
 
 /***
   Add an eventListener to the Show another quote" button that will call the
   `printQuote function.
 ***/
-const button = document.querySelector('button')
-button.addEventListener('click', () => {
-  document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-});
+
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+
+
+// Remember to delete the comments that came with this file, and replace them with your own code comments.
