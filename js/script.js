@@ -42,7 +42,6 @@ const quotes = [
     source: "Obi-Wan"
   }
 ];
-// > quotes[0].quote1[0].quote
 
 /***
   Create a random number generator, making sure it only generates a random 
