@@ -1,6 +1,7 @@
 /*** 
   Create an array of quote objects and be sure to leave some without 
-  the recommended, but optional quote objects(citation and/or year)
+  the recommended and optional quote objects(citation and/or year)
+  to make app more robust. 
 ***/
 const quotes = [
   {
