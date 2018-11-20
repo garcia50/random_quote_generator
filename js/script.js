@@ -94,7 +94,7 @@ const printQuote = () => {
 
 /***
   Add an eventListener to the Show another quote" button that will call the
-  `printQuote function.
+  `printQuote` function.
 ***/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
