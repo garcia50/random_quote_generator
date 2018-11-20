@@ -34,7 +34,6 @@ const quotes = [
   {
     quote: "It's kinda fun to do the impossible.",
     source: "Walt Disney",
-    // citation: null,
     year: "Mid 1900's"
   }
 ];
