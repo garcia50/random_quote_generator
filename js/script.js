@@ -62,13 +62,18 @@ const getRandomQuote = (array) => {
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote.
 ***/
+const printQuote = () => {
+  const quoteInfo = getRandomQuote(quotes)
+  
 /***
   Then create a `htmlBlock` variable to contain the HTML content that will 
   eventually replace the defaulted quote each time the program is ran. 
 ***/
+  let htmlBlock = `
 
 
 
+};
 
 /***
   Add an eventListener to the Show another quote" button that will call the
