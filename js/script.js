@@ -52,6 +52,12 @@ const getRandomNum = () => Math.floor(Math.random() * quotes.length);
 /***Then create a `getRandomQuote` function to iterate over the quotes and 
   select quote by index using the random number.
 ***/
+const getRandomQuote = (array) => {
+  for (var i = 0; i < array.length; i++) {
+    return array[getRandomNum()]  
+  }
+};
+ 
 /***
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote. Then create a `htmlBlock` variable to contain
