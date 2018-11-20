@@ -85,6 +85,7 @@ const printQuote = () => {
     htmlBlock += `<span class="year">${quoteInfo.year}</span></p>`;
   }
 
+  htmlBlock += "</p>";
 
 };
 
