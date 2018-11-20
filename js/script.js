@@ -70,6 +70,8 @@ const printQuote = () => {
   eventually replace the defaulted quote each time the program is ran. 
 ***/
   let htmlBlock = `
+    <p class="quote">${quoteInfo.quote}</p>
+    <p class="source">${quoteInfo.source}`;
 
 
 
