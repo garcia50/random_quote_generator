@@ -12,7 +12,7 @@ const quotes = [
   },
     
   {
-    quote: "I don't always test my code, but when I do I do it in production",
+    quote: "I don't always test my code, but when I do I do it in production.",
     source: "Mr. Dos Equis",
     citation: "The Internet",
     year: "2018"
