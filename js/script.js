@@ -73,6 +73,10 @@ const printQuote = () => {
     <p class="quote">${quoteInfo.quote}</p>
     <p class="source">${quoteInfo.source}`;
 
+/***
+  Using conditionals statements, make sure the optional properties exist 
+  before they are added to the HTML string.
+***/
 
 
 };
