@@ -62,6 +62,10 @@ const getRandomQuote = (array) => {
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote.
 ***/
+/***
+  Then create a `htmlBlock` variable to contain the HTML content that will 
+  eventually replace the defaulted quote each time the program is ran. 
+***/
 
 
 
