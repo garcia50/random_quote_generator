@@ -47,9 +47,7 @@ const quotes = [
   Create a random number generator, making sure it only generates a random 
   number up to quote length.
 ***/
-
-
-
+const getRandomNum = () => Math.floor(Math.random() * quotes.length);
 
 /***
   Create a `printQuote` function that calls the `getRandomQuote` function to
