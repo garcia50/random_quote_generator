@@ -35,6 +35,11 @@ const quotes = [
     quote: "It's kinda fun to do the impossible.",
     source: "Walt Disney",
     year: "Mid 1900's"
+  },
+
+  {
+    quote: "It's Over Anakin! I have the high ground!",
+    source: "Obi-Wan"
   }
 ];
 // > quotes[0].quote1[0].quote
