@@ -19,10 +19,9 @@ const quotes = [
   },
     
   {
-    quote: "Chuck Norris counted to infinity... twice.",
+    quote: "Chuck Norris counted to infinity... twice",
     source: "Unknown",
     citation: "The Internet"
-    // year: null
   },
 
   {
