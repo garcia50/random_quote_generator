@@ -96,8 +96,7 @@ const printQuote = () => {
   Add an eventListener to the Show another quote" button that will call the
   `printQuote` function.
 ***/
-
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
+// Remember to delete the comments that came with this file, and replace them with your own code comments.const button = document.querySelector('button')
+button.addEventListener('click', () => {
+  document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+});
