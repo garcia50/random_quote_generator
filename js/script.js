@@ -87,6 +87,7 @@ const printQuote = () => {
 
   htmlBlock += "</p>";
 
+//Finally, set the `innerHTML` of the `quote-box` div to the HTML string. 
 };
 
 /***
