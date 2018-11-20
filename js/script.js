@@ -77,6 +77,13 @@ const printQuote = () => {
   Using conditionals statements, make sure the optional properties exist 
   before they are added to the HTML string.
 ***/
+  if(quoteInfo.citation){
+    htmlBlock += `<span class="citation">${quoteInfo.citation}</span>`;
+  }
+  
+  if(quoteInfo.year){
+    htmlBlock += `<span class="year">${quoteInfo.year}</span></p>`;
+  }
 
 
 };
