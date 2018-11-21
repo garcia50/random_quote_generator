@@ -110,8 +110,8 @@ Using a conditional, after first `click` the quote and color is changed at
 every given timed length.
 ***/
   if ( t == 0 ) {
-    setInterval(changeColor, 2000); 
-    setInterval(printQuote, 2000); 
+    setInterval(changeColor, 20000); 
+    setInterval(printQuote, 20000); 
   }
 
   t += 1;
