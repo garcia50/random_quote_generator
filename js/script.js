@@ -8,38 +8,44 @@ const quotes = [
     quote: "Be the change you wish to see in the world.",
     source: "Gandhi",
     citation: "Vol. 13, Ch. 153, page 241",
-    year: "1913"
+    year: "1913",
+    tag: "Inspirational"
   },
     
   {
     quote: "I don't always test my code, but when I do I do it in production.",
     source: "Mr. Dos Equis",
     citation: "The Internet",
-    year: "2018"
+    year: "2018",
+    tag: "Humor"
   },
     
   {
     quote: "Chuck Norris counted to infinity... twice",
     source: "Unknown",
-    citation: "The Internet"
+    citation: "The Internet",
+    tag: "Humor & Inspirational"
   },
 
   {
     quote: "Hate does not drive out hate, only love can do that",
     source: "Martin Luther King Jr.",
     citation: "Sermon: Loving Your Enemies",
-    year: "1958"
+    year: "1958",
+    tag: "Inspirational"
   },
 
   {
     quote: "It's kinda fun to do the impossible.",
     source: "Walt Disney",
-    year: "Mid 1900's"
+    year: "Mid 1900's",
+    tag: "Inspirational"
   },
 
   {
     quote: "It's Over Anakin! I have the high ground!",
-    source: "Obi-Wan"
+    source: "Obi-Wan",
+    tag: "Humor"
   }
 ];
 
@@ -59,14 +65,16 @@ const getRandomQuote = (array) => {
 };
  
 /***
+  Create a `t` variable to represent the times the `setInterval` method is ran. 
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote.
 ***/
+let t = 0;
 const printQuote = () => {
   const quoteInfo = getRandomQuote(quotes)
   
 /***
-  Then create a `htmlBlock` variable to contain the HTML content that will 
+  Create a `htmlBlock` variable to contain the HTML content that will 
   eventually replace the defaulted quote each time the program is ran. 
 ***/
   let htmlBlock = `
@@ -82,21 +90,45 @@ const printQuote = () => {
   }
   
   if(quoteInfo.year){
-    htmlBlock += `<span class="year">${quoteInfo.year}</span></p>`;
+    htmlBlock += `<span class="year">${quoteInfo.year}</span>`;
+  }
+
+  if(quoteInfo.tag){
+    htmlBlock += `<span class="tag">${quoteInfo.tag}</span></p>`;
   }
 
   htmlBlock += "</p>";
 
-//Finally, set the `innerHTML` of the `quote-box` div to the HTML string. 
-  const quotebox = document.getElementById("quote-box");
-  quotebox.innerHTML = htmlBlock
+//Set the `innerHTML` of the `quote-box` div to the `htmlBlock` string. 
+  document.getElementById("quote-box").innerHTML = htmlBlock;
+
+//Calls the `changeColor` function with every `click`
+  changeColor()
+
+/***
+Using a conditional, after first `click` the quote and color is changed at 
+every given timed length.
+***/
+  if ( t == 0 ) {
+    setInterval(changeColor, 2000); 
+    setInterval(printQuote, 2000); 
+  }
+
+  t += 1;
 };
+
+//Create a function that changes background color.
+var i = 0;
+function changeColor() {
+  var doc = document.querySelector("body");
+  var color = ["purple", "blue", "lightblue", "green", "#999", "pink"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
 
 /***
   Add an eventListener to the Show another quote" button that will call the
   `printQuote` function.
 ***/
-const button = document.querySelector('button')
-button.addEventListener('click', () => {
-  document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-});
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+
