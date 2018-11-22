@@ -3,8 +3,6 @@ Welcome Users!
 This is a simple app that displays that displays random famous quotes each time a button is clicked. 
 
 ## Getting Started
-#### Good To Know:
-
 
 ### Installation -
 **To setup this application please follow these instructions:**
