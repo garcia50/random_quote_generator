@@ -121,7 +121,7 @@ every given timed length.
 var i = 0;
 function changeColor() {
   var doc = document.querySelector("body");
-  var color = ["purple", "blue", "lightblue", "green", "#999", "pink"];
+  var color = ["purple", "aqua", "lightblue", "lightgreen", "#999", "pink"];
   doc.style.backgroundColor = color[i];
   i = (i + 1) % color.length;
 }
