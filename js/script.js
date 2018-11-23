@@ -67,7 +67,6 @@ const getRandomQuote = (array) => {
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote.
 ***/
-let t = 0;
 const printQuote = () => {
   const quoteInfo = getRandomQuote(quotes)
   
@@ -108,6 +107,7 @@ Using a conditional, after first `click` the quote and color is changed at
 every given timed length.
 ***/
   if ( t == 0 ) {
+let count = 0;
     setInterval(changeColor, 20000); 
     setInterval(printQuote, 20000); 
   }
