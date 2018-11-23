@@ -96,18 +96,15 @@ const printQuote = () => {
 
   htmlBlock += "</p>";
 
-//Set the `innerHTML` of the `quote-box` div to the `htmlBlock` string. 
+// Set the `innerHTML` of the `quote-box` div to the `htmlBlock` string. 
   document.getElementById("quote-box").innerHTML = htmlBlock;
 
-//Calls the `changeColor` function with every `click`
+// Calls the `changeColor` function with every `click`
   changeColor()
 
-/***
-Using a conditional, after first `click` the quote and color is changed at 
-every given timed length.
-***/
-  if ( t == 0 ) {
+// Create a `t` variable to represent the times the `setInterval` method is ran.
 let count = 0;
+// Create a function that changes both quote and background color.
     setInterval(changeColor, 20000); 
     setInterval(printQuote, 20000); 
   }
@@ -115,8 +112,8 @@ let count = 0;
   t += 1;
 };
 
-//Create a function that changes background color.
 var i = 0;
+//Create a function that changes and arbitrarily selects background color.
 function changeColor() {
   var doc = document.querySelector("body");
   var color = ["purple", "aqua", "lightblue", "lightgreen", "#999", "pink"];
