@@ -60,9 +60,7 @@ const getRandomNum = () => Math.floor(Math.random() * quotes.length);
   the random number.
 ***/
 const getRandomQuote = (array) => {
-  for (var i = 0; i < array.length; i++) {
-    return array[getRandomNum()]  
-  }
+  return array[getRandomNum()]  
 };
  
 /***
