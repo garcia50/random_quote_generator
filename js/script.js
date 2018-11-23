@@ -101,15 +101,18 @@ const printQuote = () => {
 
 // Calls the `changeColor` function with every `click`
   changeColor()
+};
 
 // Create a `t` variable to represent the times the `setInterval` method is ran.
 let count = 0;
 // Create a function that changes both quote and background color.
+const changeQuote = () => {
+// Using a conditional, the quote and color is changed at the given timed length.
+  if ( count == 0 ) {
     setInterval(changeColor, 20000); 
     setInterval(printQuote, 20000); 
   }
-
-  t += 1;
+  count += 1;
 };
 
 var i = 0;
