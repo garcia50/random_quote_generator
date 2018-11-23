@@ -128,5 +128,6 @@ function changeColor() {
   Add an eventListener to the Show another quote" button that will call the
   `printQuote` function.
 ***/
+changeQuote()
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
