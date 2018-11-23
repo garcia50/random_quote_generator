@@ -64,7 +64,6 @@ const getRandomQuote = (array) => {
 };
  
 /***
-  Create a `t` variable to represent the times the `setInterval` method is ran. 
   Create a `printQuote` function that calls the `getRandomQuote` function to
   obtain the random quote.
 ***/
