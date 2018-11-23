@@ -55,8 +55,9 @@ const quotes = [
 ***/
 const getRandomNum = () => Math.floor(Math.random() * quotes.length);
 
-/***Then create a `getRandomQuote` function to iterate over the quotes and 
-  select quote by index using the random number.
+/***
+  Then create a `getRandomQuote` function to select quote by index using 
+  the random number.
 ***/
 const getRandomQuote = (array) => {
   for (var i = 0; i < array.length; i++) {
