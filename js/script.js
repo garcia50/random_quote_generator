@@ -115,13 +115,13 @@ const changeQuote = () => {
   count += 1;
 };
 
-var i = 0;
 //Create a function that changes and arbitrarily selects background color.
+var colorCount = 0;
 function changeColor() {
   var doc = document.querySelector("body");
   var color = ["purple", "aqua", "lightblue", "lightgreen", "#999", "pink"];
-  doc.style.backgroundColor = color[i];
-  i = (i + 1) % color.length;
+  doc.style.backgroundColor = color[colorCount];
+  colorCount = (colorCount + 1) % color.length;
 }
 
 /***
