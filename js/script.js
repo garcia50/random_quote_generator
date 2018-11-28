@@ -100,7 +100,7 @@ const printQuote = () => {
   document.getElementById("quote-box").innerHTML = htmlBlock;
 
 // Calls the `changeColor` function with every `click`
-  changeColor()
+  changeColor();
 };
 
 // Create a `t` variable to represent the times the `setInterval` method is ran.
